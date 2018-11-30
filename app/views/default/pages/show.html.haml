@@ -1,0 +1,4 @@
+%h1= current_page.title
+= content(:text).try(:html_safe)
+
+= image_tag main_app.url_for(content(:image).variant(resize: '500x500'))
